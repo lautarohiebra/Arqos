@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../public/fonts/AvenirLT35LightRegular.ttf') format('truetype');
+    /* Agrega otros formatos de fuentes según sea necesario */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Nasalization';
+    src: url('../public/fonts/nasaliza.ttf') format('truetype');
+    /* Agrega otros formatos de fuentes según sea necesario */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.nasalization {
+    font-family: 'Nasalization', sans-serif;
+}
