@@ -4,24 +4,22 @@ import FixedBg from "../components/shared/FixedBg";
 const Home = () => {
   return (
     <main>
-      <FixedBg img="/public/assets/imgHeroHome.png" />
+      <FixedBg img="./assets/ImgHeroHome.png" />
       <div className="hero min-h-screen bg-none">
-        <div className="hero-overlay bg-opacity-40"></div>
+        <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content flex flex-col md:flex-row">
           <img
-            src="/public/assets/icon.svg"
+            src="./assets/icon.svg"
             alt="Logo Arqos"
-            className="justify-center w-48 md:w-56 lg:w-72 back"
+            className="justify-center w-32 md:w-56 lg:w-72 back"
           />
           <div className="max-w-md md:text-left prose">
-            <h1 className="mb-5 text-4xl lg:text-5xl md:border-l-2 border-primary pl-2">
-              Construyendo sueños, edificando futuros
+            <h1 className="tracking-wider text-3xl lg:text-5xl md:border-l-4 border-primary pl-2 text-white font-bold">
+              Construyendo Sueños, <br /> Diseñando Futuros
             </h1>
-            <p className="mb-5 text-lg lg:text-xl bg-white bg-opacity-70  p-2">
-              Seguridad, eficacia, calidad y eficiencia Provident cupiditate
-              voluptatem et in. Quaerat fugiat ut assumenda excepturi
-              exercitationem quasi. In deleniti eaque aut repudiandae et a id
-              nisi.
+            <p className="text-lg lg:text-xl bg-opacity-70 text-white p-2">
+              Transformando Espacios y Superando Barreras, Creando Entornos que
+              Resonan con la Visión Única de Cada Cliente.
             </p>
             <button className="btn btn-primary rounded-none">
               Mas información
@@ -31,44 +29,54 @@ const Home = () => {
       </div>
 
       {/* Acerca de Arqos */}
+
       <div className="w-full min-h-[300px] bg-base-100  flex justify-center align-middle p-10 relative overflow-hidden">
-        <img src="./assets/icon.svg" alt="" className="absolute left-auto xl:left-80 z-0 w-80" />
+        <img
+          src="./assets/icon.svg"
+          alt=""
+          className="absolute left-auto xl:left-80 z-0 w-80"
+        />
         <div className="prose-sm md:prose z-10 text-justify">
-          <h2 className="border-l-4 border-primary pl-2">Acerca de Arqos</h2>
+          <h2 className="border-l-4 border-primary pl-2 text-left font-semibold">
+            Transformando Visiones en Realidades Arquitectónicas
+          </h2>
           <p>
-            ARQOS es una empresa argentina con sede en Nordelta, Provincia de
-            Buenos Aires. Brindamos una gama completa de servicios, que
-            incluyen: Proyectos, Construcción General, Gestión de Construcción y
-            Diseño, asesoramiento profesional a una lista diversa de clientes
-            corporativos, públicos y privados.
+            Ubicada en Nordelta, Provincia de Buenos Aires, ARQOS se distingue
+            como una destacada empresa argentina especializada en diseño y
+            construcción. Nos enorgullece ofrecer una gama completa de
+            servicios, que incluyen Proyectos, Construcción General, Gestión de
+            Construcción y Diseño, así como asesoramiento profesional a una
+            variada clientela compuesta por empresas corporativas, entidades
+            públicas y clientes privados.
           </p>
           <p>
-            Nuestra cartera abarca desde instalaciones de uso mixto hasta
-            instalaciones recreativas, edificios gubernamentales hasta
-            residenciales de lujo, educativos, y especialidad en desarrollos y
+            Nuestra cartera diversificada incluye desde instalaciones de uso
+            mixto hasta proyectos recreativos, edificios gubernamentales y
+            residenciales de lujo, con especial énfasis en desarrollos y
             equipamiento para Clínicas y Hospitales. Desde nuestros inicios, nos
-            hemos dedicado a brindar excelencia en calidad.
+            hemos dedicado a brindar excelencia en calidad, convirtiendo cada
+            proyecto en una expresión de nuestro compromiso con la perfección.
           </p>
         </div>
       </div>
 
       {/* Servicios */}
 
-      <div className="w-full flex flex-col md:flex-row justify-center align-middle xl:p-14">
-        <div className="prose prose-sm p-16 shadow-md w-full md:w-1/2 bg-base-100 bg-opacity-90 ">
-          <h2 className="border-l-4 border-primary pl-2">
-            Diseño y contrucción
+      <div className="w-full flex flex-col md:flex-row justify-center align-middle items-center md:items-stretch xl:p-14">
+        <div className="prose prose-sm p-16 shadow-md w-full md:w-1/2 bg-black bg-opacity-90 flex-1 text-white">
+          <h2 className="border-l-4 border-primary pl-2 text-left text-white">
+            Servicios Integral de Diseño y Construcción
           </h2>
           <p className="text-justify">
-            ARQOS ofrece servicios de diseño y construcción creativos,
-            colaborativos y gratificantes para la clientela que busca una
-            experiencia de construcción con todo incluido.
+            ARQOS se destaca en ofrecer servicios de diseño y construcción
+            creativos, colaborativos y gratificantes.
           </p>
           <p className="text-justify">
-            El paquete de diseño y construcción de ARQOS ofrece a la clientela
-            servicios de arquitectura, diseño, ingeniería y construcción bajo un
-            mismo paraguas, lo que reduce el riesgo general, al tiempo que
-            mejora la coordinación y la precisión de la programación.
+            Nuestro paquete integral abarca arquitectura, diseño, ingeniería y
+            construcción, reduciendo el riesgo general y mejorando la
+            coordinación y precisión de la programación. Desde el desarrollo del
+            programa hasta la coordinación de cierre y garantías, brindamos
+            soluciones completas y eficientes.
           </p>
 
           <Link to="/servicios/diseño_y_construcción">
@@ -78,8 +86,8 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="md:w-1/2 w-full bg-black bg-opacity-90 prose prose-sm p-16 text-white">
-          <h2 className="border-l-4 border-primary pl-2 text-white">
+        <div className="md:w-1/2 w-full bg-base-100 bg-opacity-90 prose prose-sm p-16 flex-1">
+          <h2 className="border-l-4 border-primary pl-2 text-left">
             Obras y proyectos llave en mano
           </h2>
           <p className="text-justify">
@@ -102,28 +110,53 @@ const Home = () => {
 
       {/* Seguridad */}
 
-      <div className="w-full bg-center bg-base-100 flex items-center align-middle justify-center bg-cover p-10" style={{ backgroundImage:`url('./assets/security2.jpg')`}}>
+      <div
+        className="w-full bg-center bg-base-100 flex items-center align-middle justify-center bg-cover p-10"
+        style={{ backgroundImage: `url('./assets/security2.jpg')` }}
+      >
         {/* <img src="./assets/security2.jpg" alt="Seguridad y compromiso" className="w-[600px] hidden" /> */}
         <div className="w-1/2 hidden lg:flex"></div>
-        <div className="prose-sm md:prose-base p-10 text-white lg:w-1/2 bg-neutral-900 max-w-[602px]">
-          <h2 className="border-l-4 border-primary pl-2 text-white">
-            Seguridad y Cumplimiento
+        <div className="prose-sm md:prose p-10 lg:w-1/2 bg-base-100 max-w-[602px] shadow-lg">
+          <h2 className="border-l-4 border-primary pl-2 font-semibold">
+            Compromiso con la Seguridad y Cumplimiento
           </h2>
           <p className="text-justify">
-            Todos los sitios de trabajo de ARQOS operan en un entorno de
-            rigurosa Seguridad laboral. Para nosotros la Seguridad de nuestros
-            recursos humanos es lo que garantiza su continuidad en nuestra
-            empresa, trayectoria con capacitación permanente para la tarea a
-            desempeñar.
+            La seguridad laboral es una prioridad inquebrantable para ARQOS. En
+            cada sitio de trabajo, operamos bajo rigurosas normas de seguridad,
+            asegurando la integridad y el bienestar de nuestros valiosos
+            recursos humanos.
           </p>
           <p className="text-justify">
-            Cumplimos con los mayores estándares de seguridad con nuestro
-            personal de obra. Cumplimos con los plazos establecidos desde el
-            inicio hasta el final de nuestros proyectos.
+            Nuestra dedicación a la capacitación continua garantiza un equipo
+            altamente calificado y comprometido, cumpliendo con los más altos
+            estándares de seguridad y plazos establecidos en todos nuestros
+            proyectos.
           </p>
-          <p className="text-justify">
-            ¡Todo esto se traduce en SEGURIDAD, EFICACIA, CALIDAD y EFICIENCIA!
+        </div>
+      </div>
+
+      {/* Contacto */}
+
+      <div className="bg-[url('/assets/imgContactoHome2.jpg')] w-full bg-cover p-10 flex align-middle justify-center">
+        <div className="text-gray-200 text-center flex flex-col p-10 justify-center align-middle items-center max-w-3xl">
+          <h2 className="font-semibold text-xl lg:text-3xl">
+            TRANSFORMAMOS TUS <span className="font-extralight">IDEAS</span>{" "}
+            <br /> EN <span className="font-extralight">ESPACIOS</span> QUE
+            IMPACTAN
+          </h2>
+          <p className="text-sm my-5 lg:text-base font-light">
+            Potencia Tu Visión con Diseño Vanguardista y Construcción de Alta
+            Calidad. Descubre Cómo Transformamos Ideas en Realidad
           </p>
+
+          <Link to="/Contacto">
+            <button
+              className="btn btn-outline btn-primary rounded-none w-40 text-xs lg:text-base font-light
+            "
+            >
+              CONTÁCTANOS
+            </button>
+          </Link>
         </div>
       </div>
     </main>

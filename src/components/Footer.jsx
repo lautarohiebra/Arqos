@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer place-items-center p-10 bg-neutral-900 text-white">
+    <footer className="footer place-items-center p-10 bg-neutral text-white">
       <div className="flex flex-col justify-center items-center text-center">
         <img
-          src="/public/assets/logoHorizontalLight.svg"
+          src="./assets/LogoHorizontalLight.svg"
           alt="Arqos Logo"
           className="w-64"
         />
@@ -25,14 +25,17 @@ const Footer = () => {
         <Link to="/#home__hero" className="link link-hover">
           Inicio
         </Link>
-        <Link to="/nosotros" className="link link-hover">
+        <Link to="/Nosotros" className="link link-hover">
           Sobre Nosotros
         </Link>
-        <Link to="/servicios" className="link link-hover">
+        <Link to="/Servicios" className="link link-hover">
           Servicios
         </Link>
-        <Link to="/contacto" className="link link-hover">
-          Formulario de Contacto
+        <Link to="/Empleo" className="link link-hover">
+          Empleo
+        </Link>
+        <Link to="/Contacto" className="link link-hover">
+          Contacto
         </Link>
       </div>
     </footer>
