@@ -61,7 +61,11 @@ const Home = () => {
       </div>
 
       {/* Servicios */}
-
+{/* 
+      <div className="w-full h-0 text-center absolute">
+        <h2 className="text-2xl md:text-3xl font-medium tracking-widest text-white bg-primary inline p-5">SERVICIOS</h2>
+      </div>
+ */}
       <div className="w-full flex flex-col md:flex-row justify-center align-middle items-center md:items-stretch xl:p-14">
         <div className="prose prose-sm p-16 shadow-md w-full md:w-1/2 bg-black bg-opacity-90 flex-1 text-white">
           <h2 className="border-l-4 border-primary pl-2 text-left text-white">

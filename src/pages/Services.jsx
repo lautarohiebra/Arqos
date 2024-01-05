@@ -42,49 +42,53 @@ const Services = () => {
         </Swiper>
       </div>
 
-      <div className="w-full h-screen bg-base-100">
-        <div className="w-full flex flex-col md:flex-row justify-center align-middle items-center md:items-stretch xl:p-14">
-          <div className="prose prose-sm p-16 shadow-md w-full md:w-1/2 bg-base-100 bg-opacity-90 flex-1">
-            <h2 className="border-l-4 border-primary pl-2 text-left">
-              Servicios Integral de Diseño y Construcción
+      {/* Intro servicios */}
+
+      <div className="w-full min-h-[600px] p-10 flex flex-col md:flex-row align-middle items-center justify-center gap-5">
+        <div className="w-full lg:w-1/2 flex flex-row gap-2 lg:gap-6 justify-center lg:justify-end lg:p-5 -mt-4">
+          <img
+            src="/assets/servicios.jpg"
+            alt="Arqos Servicios img"
+            className="w-36 h-72 md:w-48 md:h-80 lg:w-56 xl:w-60 lg:h-[400px] object-cover -mt-10 grayscale shadow-md"
+          />
+          <img
+            src="/assets/servicios2.jpg"
+            alt="Arqos Servicios img2"
+            className="w-36 h-72 md:w-48 md:h-80 lg:w-56 xl:w-60 lg:h-[400px] object-cover grayscale shadow-md"
+          />
+        </div>
+        <div className="w-full lg:w-1/2 p-5 lg:p-10 flex justify-center lg:justify-start">
+          <div className="flex flex-col max-w-md">
+            <span className="text-xs font-semibold tracking-wider">
+              - NUESTROS SERVICIOS
+            </span>
+            <h2 className="font-semibold text-xl mt-">
+              Transforma Tu Visión en Realidad con ARQOS
             </h2>
-            <p className="text-justify">
-              ARQOS se destaca en ofrecer servicios de diseño y construcción
-              creativos, colaborativos y gratificantes.
+            <p className="text-sm  font-semibold my-5">
+              Bienvenido a la puerta de entrada a la excelencia arquitectónica.
+              En ARQOS, no simplemente construimos estructuras, creamos
+              experiencias.{" "}
             </p>
-            <p className="text-justify">
-              Nuestro paquete integral abarca arquitectura, diseño, ingeniería y
-              construcción, reduciendo el riesgo general y mejorando la
-              coordinación y precisión de la programación. Desde el desarrollo
-              del programa hasta la coordinación de cierre y garantías,
-              brindamos soluciones completas y eficientes.
+            <p className="text-sm ">
+              Descubre una nueva dimensión en el mundo de la construcción, donde
+              cada proyecto es una oportunidad para fusionar creatividad y
+              funcionalidad.
+            </p>
+            <p className="text-sm mt-2">
+              En ARQOS, no nos limitamos a edificar estructuras; damos vida a
+              ideas, desde la conceptualización hasta la realidad tangible.
+            </p>
+            <p className="text-sm mt-2">
+              Con un enfoque centrado en el cliente, trabajamos en estrecha
+              colaboración contigo para entender tus necesidades, aspiraciones y
+              sueños arquitectónicos. Nos enorgullece ofrecer soluciones a
+              medida que reflejen tu estilo único y satisfagan tus objetivos
+              específicos.
             </p>
 
-            <Link to="/servicios/diseño_y_construcción">
-              <button className="btn btn-outline btn-primary rounded-none">
-                Mas información
-              </button>
-            </Link>
-          </div>
-
-          <div className="md:w-1/2 w-full bg-black bg-opacity-90 prose prose-sm p-16 text-white flex-1">
-            <h2 className="border-l-4 border-primary pl-2 text-white text-left">
-              Obras y proyectos llave en mano
-            </h2>
-            <p className="text-justify">
-              ARQOS proporciona una experiencia de OBRAS Y PROYECTOS LLAVE EN
-              MANO insuperable al involucrarse desde el principio, resaltar las
-              variables potenciales y proporcionar información comercial y de
-              programación durante la fase de conceptualización.
-            </p>
-            <p className="text-justify">
-              Los servicios de contratación general están disponibles tanto para
-              proyectos de licitación competitiva como de acuerdos negociados.
-            </p>
-            <Link to="/servicios/obras_y_proyectos">
-              <button className="btn btn-outline btn-primary rounded-none">
-                Mas información
-              </button>
+            <Link to="/contacto">
+              <button className="btn btn-outline rounded-none my-8">COMIENZA AHORA</button>
             </Link>
           </div>
         </div>
