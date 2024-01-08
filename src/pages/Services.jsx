@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-/* import { Link } from "react-router-dom"; */
-import { items } from "../data/serviceItems";
 import { Link } from "react-router-dom";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+import { benefits2, items } from "../data/serviceItems";
+import { benefits } from "../data/serviceItems";
 
 const Services = () => {
   return (
@@ -62,7 +62,7 @@ const Services = () => {
             <span className="text-xs font-semibold tracking-wider">
               - NUESTROS SERVICIOS
             </span>
-            <h2 className="font-semibold text-xl mt-">
+            <h2 className="font-semibold text-xl lg:text-3xl">
               Transforma Tu Visión en Realidad con ARQOS
             </h2>
             <p className="text-sm  font-semibold my-5">
@@ -87,9 +87,101 @@ const Services = () => {
               específicos.
             </p>
 
-            <Link to="/contacto">
-              <button className="btn btn-outline rounded-none my-8">COMIENZA AHORA</button>
-            </Link>
+            <div>
+              <Link to="/contacto">
+                <button className="btn btn-outline rounded-none my-8">
+                  COMIENZA AHORA
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Servicios */}
+
+      {/* Diseño y construcción */}
+
+      <div
+        id="diseño"
+        className="w-full min-h-[600px] bg-neutral flex flex-col md:flex-row bg-[url('assets/building.png')] bg-right-top bg-cover lg:bg-contain bg-no-repeat py-10"
+      >
+        <div className="w-full lg:ml-36 p-10 flex justify-center lg:justify-start">
+          <div className="flex flex-col max-w-xl p-10 lg:p-0 align-middle justify-center backdrop-blur-3xl backdrop-brightness-50 md:backdrop-brightness-100 text-base-100">
+            <span className="text-xs font-semibold tracking-wider brightness-75">
+              - NUESTROS SERVICIOS
+            </span>
+            <h2 className="font-semibold text-xl lg:text-3xl">
+              Diseño y construcción
+            </h2>
+            <p className="text-sm  font-semibold my-5">
+              Nuestros servicios de diseño y construcción ofrecen una
+              experiencia completa bajo un mismo techo, fusionando arquitectura,
+              diseño, ingeniería y construcción.
+            </p>
+            <p className="text-sm ">
+              Simplifica tu camino hacia la construcción de tus sueños,
+              reduciendo riesgos y mejorando la coordinación.
+            </p>
+
+            <ul className="list-disc my-6 p-4">
+              {benefits.map((benefit, index) => (
+                <li key={`benefit_design_${index}`} className="text-sm mt-1">
+                  {benefit}
+                </li>
+              ))}
+            </ul>
+
+            <div className="text-center lg:text-left">
+              <Link to="/contacto">
+                <button className="btn btn-outline btn-primary rounded-none my-8">
+                  CONTÁCTANOS PARA MÁS INFORMACIÓN
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Obras y proyectos llave en mano */}
+
+      <div
+        id="llave_en_mano"
+        className="w-full min-h-[600px] bg-base-100 flex flex-col md:flex-row bg-[url('assets/building3.png')] bg-left-bottom  bg-cover lg:bg-contain bg-no-repeat justify-end"
+      >
+        <div className="w-full lg:mr-36 p-10 flex justify-center lg:justify-end">
+          <div className="flex flex-col max-w-xl p-10 lg:p-5 align-middle justify-center backdrop-blur-3xl backdrop-brightness-75 lg:backdrop-brightness-100 text-white lg:text-neutral">
+            <span className="text-xs font-semibold tracking-wider brightness-75">
+              - NUESTROS SERVICIOS
+            </span>
+            <h2 className="font-semibold text-xl lg:text-3xl">
+              Obras y proyectos llave en mano
+            </h2>
+            <p className="text-sm  font-semibold my-5">
+              Transforma tus ideas en realidad con la experiencia insuperable de
+              Obras y Proyectos Llave en Mano de ARQOS.
+            </p>
+            <p className="text-sm ">
+              Desde el inicio, destacamos variables potenciales, proporcionamos
+              información comercial y de programación durante la
+              conceptualización y ofrecemos servicios de contratación general.
+            </p>
+
+            <ul className="list-disc my-5 p-4">
+              {benefits2.map((benefit, index) => (
+                <li key={`benefit_proyects_${index}`} className="text-sm mt-1">
+                  {benefit}
+                </li>
+              ))}
+            </ul>
+
+            <div className="text-center lg:text-left">
+              <Link to="/contacto">
+                <button className="btn btn-outline btn-primary rounded-none my-8">
+                  CONTÁCTANOS PARA MÁS INFORMACIÓN
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -83,7 +83,7 @@ const Home = () => {
             soluciones completas y eficientes.
           </p>
 
-          <Link to="/servicios/diseño_y_construcción">
+          <Link to="/servicios/#diseño">
             <button className="btn btn-outline btn-primary rounded-none">
               Mas información
             </button>
@@ -104,7 +104,7 @@ const Home = () => {
             Los servicios de contratación general están disponibles tanto para
             proyectos de licitación competitiva como de acuerdos negociados.
           </p>
-          <Link to="/servicios/obras_y_proyectos">
+          <Link to="/servicios/#llave_en_mano">
             <button className="btn btn-outline btn-primary rounded-none">
               Mas información
             </button>
