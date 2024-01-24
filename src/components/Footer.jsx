@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer place-items-center p-10 bg-neutral text-white">
       <div className="flex flex-col justify-center items-center text-center">
         <img
-          src="./assets/LogoHorizontalLight.svg"
+          src="/assets/LogoHorizontalLight.svg"
           alt="Arqos Logo"
           className="w-64"
         />

@@ -4,12 +4,12 @@ import FixedBg from "../components/shared/FixedBg";
 const Home = () => {
   return (
     <main>
-      <FixedBg img="./assets/ImgHeroHome.png" />
+      <FixedBg img="/assets/ImgHeroHome.png" />
       <div className="hero min-h-screen bg-none">
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content flex flex-col md:flex-row">
           <img
-            src="./assets/icon.svg"
+            src="/assets/icon.svg"
             alt="Logo Arqos"
             className="justify-center w-32 md:w-56 lg:w-72 back"
           />
@@ -32,7 +32,7 @@ const Home = () => {
 
       <div className="w-full min-h-[300px] bg-base-100  flex justify-center align-middle p-10 relative overflow-hidden">
         <img
-          src="./assets/icon.svg"
+          src="/assets/icon.svg"
           alt=""
           className="absolute left-auto xl:left-80 z-0 w-80"
         />
@@ -83,7 +83,7 @@ const Home = () => {
             soluciones completas y eficientes.
           </p>
 
-          <Link to="/servicios/#diseño">
+          <Link to="./servicios/#diseño">
             <button className="btn btn-outline btn-primary rounded-none">
               Mas información
             </button>
@@ -104,7 +104,7 @@ const Home = () => {
             Los servicios de contratación general están disponibles tanto para
             proyectos de licitación competitiva como de acuerdos negociados.
           </p>
-          <Link to="/servicios/#llave_en_mano">
+          <Link to="./servicios/#llave_en_mano">
             <button className="btn btn-outline btn-primary rounded-none">
               Mas información
             </button>
@@ -118,7 +118,7 @@ const Home = () => {
         className="w-full bg-center bg-base-100 flex items-center align-middle justify-center bg-cover p-10"
         style={{ backgroundImage: `url('./assets/security2.jpg')` }}
       >
-        {/* <img src="./assets/security2.jpg" alt="Seguridad y compromiso" className="w-[600px] hidden" /> */}
+        {/* <img src="/assets/security2.jpg" alt="Seguridad y compromiso" className="w-[600px] hidden" /> */}
         <div className="w-1/2 hidden lg:flex"></div>
         <div className="prose-sm md:prose p-10 lg:w-1/2 bg-base-100 max-w-[602px] shadow-lg">
           <h2 className="border-l-4 border-primary pl-2 font-semibold">

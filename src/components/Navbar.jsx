@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 0) {
@@ -10,6 +11,14 @@ const Navbar = () => {
     } else {
       setScrolling(false);
     }
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   useEffect(() => {
@@ -25,12 +34,12 @@ const Navbar = () => {
       name: "Inicio",
     },
     {
-      path: "/nosotros",
-      name: "Nosotros",
-    },
-    {
       path: "/servicios",
       name: "Servicios",
+    },
+    {
+      path: "/nosotros",
+      name: "Nosotros",
     },
     {
       path: "/Empleo",
@@ -47,8 +56,13 @@ const Navbar = () => {
       >
         <nav className="navbar container mx-auto font-semibold">
           <div className="navbar-start">
-            <div className="dropdown mr-1">
-              <label tabIndex={0} className="btn btn-ghost rounded-none lg:hidden">
+            <div id="nav-dropdown" className="dropdown mr-1">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost rounded-none lg:hidden"
+                onClick={toggleMenu}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -63,21 +77,27 @@ const Navbar = () => {
                     d="M4 6h16M4 12h8m-8 6h16"
                   />
                 </svg>
-              </label>
+              </div>
 
               {/* Links menu toogle */}
 
               <ul
                 tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 w-52 text-center"
+                className={`menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 w-52 text-center ${
+                  menuOpen ? "block" : "hidden"
+                }`}
               >
                 {links.map((link, index) => (
                   <li className="hover-bordered" key={index}>
-                    <Link to={link.path}>{link.name}</Link>
+                    <Link 
+                    to={link.path}
+                    onClick={closeMenu}>{link.name}</Link>
                   </li>
                 ))}
                 <Link to="/contacto">
-                  <button className="btn btn-primary btn-sm w-48 mt-2 rounded-none">
+                  <button 
+                  className="btn btn-primary btn-sm w-48 mt-2 rounded-none"
+                  onClick={closeMenu}>
                     Contacto
                   </button>
                 </Link>
@@ -85,14 +105,13 @@ const Navbar = () => {
             </div>
             <Link to="/">
               <img
-                src="./assets/LogoHorizontalLight.svg"
+                src="/assets/LogoHorizontalLight.svg"
                 alt="Logo"
                 className="w-52 min-w-[150px]"
               />
             </Link>
           </div>
           <div className=" navbar-center hidden lg:flex">
-            
             {/* Links Desktop */}
 
             <ul className="menu menu-horizontal px-1 gap-2 text-base">

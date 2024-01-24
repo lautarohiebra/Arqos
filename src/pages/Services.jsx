@@ -6,11 +6,12 @@ import { benefits2, items } from "../data/serviceItems";
 import { benefits } from "../data/serviceItems";
 
 const Services = () => {
+
   return (
-    <section>
+    <main>
       {/* Swiper */}
 
-      <div className="w-full">
+      <section className="w-full">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -40,11 +41,11 @@ const Services = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </section>
 
       {/* Intro servicios */}
 
-      <div className="w-full min-h-[600px] p-10 flex flex-col md:flex-row align-middle items-center justify-center gap-5">
+      <section className="w-full min-h-[600px] p-10 flex flex-col md:flex-row align-middle items-center justify-center gap-5">
         <div className="w-full lg:w-1/2 flex flex-row gap-2 lg:gap-6 justify-center lg:justify-end lg:p-5 -mt-4">
           <img
             src="/assets/servicios.jpg"
@@ -59,7 +60,7 @@ const Services = () => {
         </div>
         <div className="w-full lg:w-1/2 p-5 lg:p-10 flex justify-center lg:justify-start">
           <div className="flex flex-col max-w-md">
-            <span className="text-xs font-semibold tracking-wider">
+            <span className="text-xs font-semibold tracking-wider text-primary">
               - NUESTROS SERVICIOS
             </span>
             <h2 className="font-semibold text-xl lg:text-3xl">
@@ -96,19 +97,19 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Servicios */}
 
       {/* Diseño y construcción */}
 
-      <div
+      <section
         id="diseño"
-        className="w-full min-h-[600px] bg-neutral flex flex-col md:flex-row bg-[url('assets/building.png')] bg-right-top bg-cover lg:bg-contain bg-no-repeat py-10"
+        className="w-full min-h-[600px] bg-neutral flex flex-col md:flex-row bg-[url('/assets/building8.png')] bg-right-top bg-cover lg:bg-contain bg-no-repeat py-10"
       >
-        <div className="w-full lg:ml-36 p-10 flex justify-center lg:justify-start">
-          <div className="flex flex-col max-w-xl p-10 lg:p-0 align-middle justify-center backdrop-blur-3xl backdrop-brightness-50 md:backdrop-brightness-100 text-base-100">
-            <span className="text-xs font-semibold tracking-wider brightness-75">
+        <div className="w-full lg:ml-36 xl:ml-60 p-10 flex justify-center lg:justify-start">
+          <div className=" flex flex-col max-w-xl p-10 lg:p-0 align-middle justify-center backdrop-blur-3xl backdrop-brightness-50 lg:backdrop-brightness-100 text-base-100">
+            <span className="text-xs font-semibold tracking-wider text-primary">
               - NUESTROS SERVICIOS
             </span>
             <h2 className="font-semibold text-xl lg:text-3xl">
@@ -141,17 +142,17 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Obras y proyectos llave en mano */}
 
-      <div
+      <section
         id="llave_en_mano"
-        className="w-full min-h-[600px] bg-base-100 flex flex-col md:flex-row bg-[url('assets/building3.png')] bg-left-bottom  bg-cover lg:bg-contain bg-no-repeat justify-end"
+        className="w-full min-h-[600px] bg-base-100 flex flex-col md:flex-row bg-[url('/assets/building9.png')] bg-left-bottom  bg-cover lg:bg-contain bg-no-repeat justify-end"
       >
-        <div className="w-full lg:mr-36 p-10 flex justify-center lg:justify-end">
-          <div className="flex flex-col max-w-xl p-10 lg:p-5 align-middle justify-center backdrop-blur-3xl backdrop-brightness-75 lg:backdrop-brightness-100 text-white lg:text-neutral">
-            <span className="text-xs font-semibold tracking-wider brightness-75">
+        <div className="w-full lg:mr-36 xl:mr-60 p-10 flex justify-center lg:justify-end">
+          <div className="flex flex-col max-w-xl p-10 lg:p-5 align-middle justify-center backdrop-blur-3xl backdrop-brightness-50 lg:backdrop-brightness-100 text-white lg:text-neutral">
+            <span className="text-xs font-semibold tracking-wider text-primary">
               - NUESTROS SERVICIOS
             </span>
             <h2 className="font-semibold text-xl lg:text-3xl">
@@ -184,8 +185,8 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 };
 
