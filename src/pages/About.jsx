@@ -6,16 +6,18 @@ import { aboutData } from "../data/aboutData";
 const About = () => {
   return (
     <main>
-      <FixedBg img="/assets/aboutPageHero.jpg" />
+      <FixedBg 
+      img="/assets/aboutPageHero2.jpg"
+      height="400px" />
       <section>
-        <div className="w-full h-[400px] lg:h-[600px] relative flex items-center align-middle md:justify-start justify-center">
+        <div className="w-full h-[400px] relative flex items-center align-middle md:justify-start justify-center">
           <div className="absolute w-full h-full bg-black opacity-30"></div>
           <div className="absolute w-full h-full bg-gradient-to-br from-black" />
           <div className="absolute p-10 leading-none text-center md:text-left">
-            <span className="text-md md:text-4xl text-primary">
+            <span className="text-md md:text-2xl text-primary opacity-70">
               CONOCE MÁS{" "}
             </span>
-            <h2 className="font-bold text-base-100 leading-none text-3xl md:text-7xl">
+            <h2 className="font-bold text-base-100 leading-none text-3xl md:text-5xl">
               SOBRE <span className="font-light tracking-widest">NOSOTROS</span>
             </h2>
           </div>
@@ -77,7 +79,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="min-h-[800px] bg-neutral flex flex-col items-center align-middle justify-center px-10 py-20 gap-10">
+      <section className="min-h-[600px] bg-neutral flex flex-col items-center align-middle justify-center px-10 py-20 gap-10">
         <div className="px-5 text-center md:text-left md:w-full  text-base-100 mb-8">
           <span className="text-primary text-sm md:hidden">
             - SOBRE NOSOTROS -

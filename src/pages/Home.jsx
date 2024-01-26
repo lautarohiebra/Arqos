@@ -4,9 +4,12 @@ import FixedBg from "../components/shared/FixedBg";
 const Home = () => {
   return (
     <main>
-      <FixedBg img="/assets/ImgHeroHome.png" />
+      <FixedBg 
+      img="/assets/ImgHeroHome.png"
+      height="100%" />
       <div className="hero min-h-screen bg-none">
-        <div className="hero-overlay bg-opacity-60"></div>
+{/*         <div className="hero-overlay bg-opacity-60"/> */}
+        <div className="absolute w-full h-full bg-gradient-to-br from-black opacity-90" />
         <div className="hero-content text-center text-neutral-content flex flex-col md:flex-row">
           <img
             src="/assets/icon.svg"
