@@ -39,7 +39,7 @@ const Home = () => {
           alt=""
           className="absolute left-auto xl:left-80 z-0 w-80"
         />
-        <div className="prose-sm md:prose z-10 text-justify">
+        <div className="prose-sm md:prose z-10 ">
           <h2 className="border-l-4 border-primary pl-2 text-left font-semibold">
             Transformando Visiones en Realidades Arquitectónicas
           </h2>
@@ -74,11 +74,11 @@ const Home = () => {
           <h2 className="border-l-4 border-primary pl-2 text-left text-white">
             Servicios Integral de Diseño y Construcción
           </h2>
-          <p className="text-justify">
+          <p className="">
             ARQOS se destaca en ofrecer servicios de diseño y construcción
             creativos, colaborativos y gratificantes.
           </p>
-          <p className="text-justify">
+          <p className="">
             Nuestro paquete integral abarca arquitectura, diseño, ingeniería y
             construcción, reduciendo el riesgo general y mejorando la
             coordinación y precisión de la programación. Desde el desarrollo del
@@ -97,13 +97,13 @@ const Home = () => {
           <h2 className="border-l-4 border-primary pl-2 text-left">
             Obras y proyectos llave en mano
           </h2>
-          <p className="text-justify">
+          <p className="">
             ARQOS proporciona una experiencia de OBRAS Y PROYECTOS LLAVE EN MANO
             insuperable al involucrarse desde el principio, resaltar las
             variables potenciales y proporcionar información comercial y de
             programación durante la fase de conceptualización.
           </p>
-          <p className="text-justify">
+          <p className="">
             Los servicios de contratación general están disponibles tanto para
             proyectos de licitación competitiva como de acuerdos negociados.
           </p>
@@ -118,22 +118,22 @@ const Home = () => {
       {/* Seguridad */}
 
       <div
-        className="w-full bg-center bg-base-100 flex items-center align-middle justify-center bg-cover p-10 relative h-[600px]"
+        className="w-full bg-center bg-base-100 flex items-center align-middle justify-center bg-cover p-10 relative min-h-[700px]"
         style={{ backgroundImage: `url('./assets/security2.jpg')` }}
       >
-        <div className="absolute w-full h-[30%] bottom-0 left-0 bg-gradient-to-t from-neutral" />
+        <div className="absolute w-full h-[50%] bottom-0 left-0 bg-gradient-to-t from-neutral z-10" />
         <div className="w-1/2 hidden lg:flex"></div>
-        <div className="prose-sm md:prose p-10 lg:w-1/2 bg-base-100 max-w-[602px] shadow-lg">
+        <div className="prose-sm md:prose p-10 lg:w-1/2 bg-base-100 max-w-[602px] shadow-lg z-20">
           <h2 className="border-l-4 border-primary pl-2 font-semibold">
             Compromiso con la Seguridad y Cumplimiento
           </h2>
-          <p className="text-justify">
+          <p className="">
             La seguridad laboral es una prioridad inquebrantable para ARQOS. En
             cada sitio de trabajo, operamos bajo rigurosas normas de seguridad,
             asegurando la integridad y el bienestar de nuestros valiosos
             recursos humanos.
           </p>
-          <p className="text-justify">
+          <p className="">
             Nuestra dedicación a la capacitación continua garantiza un equipo
             altamente calificado y comprometido, cumpliendo con los más altos
             estándares de seguridad y plazos establecidos en todos nuestros
