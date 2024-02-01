@@ -7,6 +7,7 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Jobs from "./pages/Jobs"
 import Footer from "./components/Footer"
+import WppBtn from "./components/WppButton"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Contacto" element={<Contact />} />
         <Route path="/Empleo" element={<Jobs />} />
       </Routes>
+      <WppBtn />
       <Footer />
     </main >
   )

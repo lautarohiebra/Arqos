@@ -4,11 +4,9 @@ import FixedBg from "../components/shared/FixedBg";
 const Home = () => {
   return (
     <main>
-      <FixedBg 
-      img="/assets/ImgHeroHome.png"
-      height="100%" />
+      <FixedBg img="/assets/ImgHeroHome.png" height="100%" />
       <div className="hero min-h-screen bg-none">
-{/*         <div className="hero-overlay bg-opacity-60"/> */}
+        {/*         <div className="hero-overlay bg-opacity-60"/> */}
         <div className="absolute w-full h-full bg-gradient-to-br from-black opacity-90" />
         <div className="hero-content text-center text-neutral-content flex flex-col md:flex-row">
           <img
@@ -24,9 +22,11 @@ const Home = () => {
               Transformando Espacios y Superando Barreras, Creando Entornos que
               Resonan con la Visión Única de Cada Cliente.
             </p>
-            <button className="btn btn-primary rounded-none">
-              Mas información
-            </button>
+            <Link to="/servicios">
+              <button className="btn btn-primary rounded-none">
+                Mas información
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@ const Home = () => {
       </div>
 
       {/* Servicios */}
-{/* 
+      {/* 
       <div className="w-full h-0 text-center absolute">
         <h2 className="text-2xl md:text-3xl font-medium tracking-widest text-white bg-primary inline p-5">SERVICIOS</h2>
       </div>
@@ -118,10 +118,10 @@ const Home = () => {
       {/* Seguridad */}
 
       <div
-        className="w-full bg-center bg-base-100 flex items-center align-middle justify-center bg-cover p-10"
+        className="w-full bg-center bg-base-100 flex items-center align-middle justify-center bg-cover p-10 relative h-[600px]"
         style={{ backgroundImage: `url('./assets/security2.jpg')` }}
       >
-        {/* <img src="/assets/security2.jpg" alt="Seguridad y compromiso" className="w-[600px] hidden" /> */}
+        <div className="absolute w-full h-[30%] bottom-0 left-0 bg-gradient-to-t from-neutral" />
         <div className="w-1/2 hidden lg:flex"></div>
         <div className="prose-sm md:prose p-10 lg:w-1/2 bg-base-100 max-w-[602px] shadow-lg">
           <h2 className="border-l-4 border-primary pl-2 font-semibold">
@@ -141,24 +141,30 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <div className="w-full h-14 bg-neutral"></div>
 
       {/* Contacto */}
 
-      <div className="bg-[url('/assets/imgContactoHome2.jpg')] w-full bg-cover p-10 flex align-middle justify-center">
-        <div className="text-gray-200 text-center flex flex-col p-10 justify-center align-middle items-center max-w-3xl">
-          <h2 className="font-semibold text-xl lg:text-3xl">
-            TRANSFORMAMOS TUS <span className="font-extralight">IDEAS</span>{" "}
-            <br /> EN <span className="font-extralight">ESPACIOS</span> QUE
-            IMPACTAN
+      <div className="bg-[url('/assets/imgContactoHome4.jpg')] w-full bg-cover bg-top p-10 flex align-middle justify-center min-h-screen relative">
+        <div className="absolute w-full h-full z-10 " />
+        <div className="absolute w-full h-[65%] bottom-0 left-0 bg-gradient-to-t from-neutral z-10" />
+        <div className="absolute w-full h-[65%] top-0 left-0 bg-gradient-to-b from-neutral z-10" />
+        <div className="text-gray-200 text-center flex flex-col p-10 justify-center align-middle items-center max-w-3xl z-20">
+          <h2 className="font-semibold text-xl lg:text-4xl">
+            TRANSFORMAMOS TUS IDEAS
+            <br /> EN{" "}
+            <span className="font-extralight tracking-widest">ESPACIOS</span>{" "}
+            QUE
+            <span className="border-2 px-2 m-2">IMPACTAN</span>
           </h2>
-          <p className="text-sm my-5 lg:text-base font-light">
+          <p className="text-sm my-5 lg:text-base xl:text-lg font-light">
             Potencia Tu Visión con Diseño Vanguardista y Construcción de Alta
             Calidad. Descubre Cómo Transformamos Ideas en Realidad
           </p>
 
           <Link to="/Contacto">
             <button
-              className="btn btn-outline btn-primary rounded-none w-40 text-xs lg:text-base font-light
+              className="btn  btn-primary rounded-none w-40 text-xs lg:text-base font-light
             "
             >
               CONTÁCTANOS

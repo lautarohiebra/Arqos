@@ -36,7 +36,7 @@ const About = () => {
 
           <div className="flex flex-row items-center text-center bg-white shadow-md p-5 w-64 -my-5 z-30 gap-2 md:my-10 md:shadow-none md:bg-transparent">
             <span className="font-extrabold text-5xl text-primary w-1/2 nasalization">
-              +xx
+              +10
             </span>
             <p className="text-xs font-semibold tracking-wider w-1/2 md:text-left">
               Años de experiencia brindando

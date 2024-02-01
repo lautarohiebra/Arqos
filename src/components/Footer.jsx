@@ -13,10 +13,9 @@ const Footer = () => {
       <div className="text-center md:text-left">
         <span className="footer-title mx-auto md:mx-0">Contacto</span>
         <ul>
-          <li>Espacio para la direccion</li>
-          <li>Mas info de dirección</li>
-          <li>Argentina</li>
-          <li>Tel: Agregar teléfono</li>
+          <li>Marcelo T. De Alvear 1342 CABA</li>
+          <li>Buenos Aires Argentina</li>
+          <li>Tel: +54 9 11 2518-5895</li>
           <li>mail: info@arqos.com.ar</li>
         </ul>
       </div>

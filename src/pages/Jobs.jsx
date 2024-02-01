@@ -23,7 +23,7 @@ const Jobs = () => {
       <section className="bg-base-100 w-full h-[600px] bg-cover bg-center bg-[url('/assets/jobs.jpg')] z-0 relative">
         <div className="bg-base-100 w-full h-full opacity-80 z-10 absolute" />
         <div className="w-full h-full flex items-center justify-center align-middle z-20 absolute">
-          <div className="flex flex-col max-w-md text-center">
+          <div className="flex flex-col max-w-md text-center p-5">
             <span className="text-xs font-semibold tracking-wider text-primary">
               - EMPLEOS -
             </span>
