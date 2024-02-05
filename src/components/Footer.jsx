@@ -16,12 +16,12 @@ const Footer = () => {
           <li>Marcelo T. De Alvear 1342 CABA</li>
           <li>Buenos Aires Argentina</li>
           <li>Tel: +54 9 11 2518-5895</li>
-          <li>mail: info@arqos.com.ar</li>
+          <li>mail: info@arqosconstrucciones.com.ar</li>
         </ul>
       </div>
       <div className="flex flex-col items-center md:items-start">
         <span className="footer-title mx-auto md:mx-0">Links</span>
-        <Link to="/#home__hero" className="link link-hover">
+        <Link to="/" className="link link-hover">
           Inicio
         </Link>
         <Link to="/Nosotros" className="link link-hover">

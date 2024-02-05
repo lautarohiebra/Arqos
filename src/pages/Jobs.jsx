@@ -41,7 +41,7 @@ const Jobs = () => {
               plazo que respalden los ideales y objetivos de nuestra empresa.
             </p>
             <p className="text-sm mt-2 bg-primary text-white p-2 shadow-md">
-              Estamos en búsqueda de talento. <br /> Envía tu CV a <span className="font-semibold badge">rrhh@arqos.com.ar</span> y
+              Estamos en búsqueda de talento. <br /> Envía tu CV a <span className="font-semibold badge">rrhh@arqosconstrucciones.com.ar</span> y
               descubre cómo puedes formar parte de nuestro equipo en ARQOS.
             </p>
           </div>

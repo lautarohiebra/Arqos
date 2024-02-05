@@ -34,11 +34,11 @@ const Navbar = () => {
       name: "Inicio",
     },
     {
-      path: "/servicios",
+      path: "/Servicios",
       name: "Servicios",
     },
     {
-      path: "/nosotros",
+      path: "/Nosotros",
       name: "Nosotros",
     },
     {

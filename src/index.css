@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'Nasalization';
-    src: url('../public/fonts/nasaliza.ttf') format('truetype');
+    src: url('/fonts/nasaliza.ttf') format('truetype');
     /* Agrega otros formatos de fuentes según sea necesario */
     font-weight: normal;
     font-style: normal;

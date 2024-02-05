@@ -51,7 +51,7 @@ const Contact = () => {
                 2518-5895
               </li>
               <li className="mt-3">
-                <span className="font-semibold">Corréo:</span> info@arqos.com.ar
+                <span className="font-semibold">Corréo:</span> info@arqosconstrucciones.com.ar
               </li>
             </ul>
           </div>

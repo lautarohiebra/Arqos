@@ -44,7 +44,7 @@ const Home = () => {
             Transformando Visiones en Realidades Arquitectónicas
           </h2>
           <p>
-            Ubicada en Nordelta, Provincia de Buenos Aires, ARQOS se distingue
+            Ubicada en la ciudad de Buenos Aires, ARQOS se distingue
             como una destacada empresa argentina especializada en diseño y
             construcción. Nos enorgullece ofrecer una gama completa de
             servicios, que incluyen Proyectos, Construcción General, Gestión de
